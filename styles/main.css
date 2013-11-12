@@ -90,7 +90,7 @@ article.bespoke-parent {
   left: 50%;
   margin-left: -320px;
   background: #fff;
-  background-image: url("/images/kartena.png");
+  background-image: url("../images/kartena.png");
   background-repeat: no-repeat;
   -webkit-background-size: 100px;
   -moz-background-size: 100px;
