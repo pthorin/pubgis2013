@@ -16,7 +16,9 @@ html
 
       section
         h1 Pubkväll GIS-Väst
-
+        hr
+        p Slides finns på <a href='http://pthorin.github.io/pubgis2013'>http://pthorin.github.io/pubgis2013</a>
+        
       section
         h1 Trender
       section
@@ -26,48 +28,24 @@ html
           li Closed source: Drivkraft att skapa stora system
           li Open source: Drivkraft att skapa lösningar på specifika problem
       section
-        h1 Javascript
-        p NPM / Node.js
-        p Fokuserat
-      section
-        h1 Kombination
-        ul
-          li Många utvecklare skriver väldigt många små projekt som löser små specifika problem
-          br
-          li npm gör att det lätt att installera och kombinera dessa projekt
-          br
-          br
-          br
-          br
-          li <small><em>Detta är inget nytt, det är en gammal UNIX-idé</em></small>
-      section
-        h1 <img src="images/leaflet.png" width=440/>
-        ul
-          li Enkelhet*
-          li Färre funktioner istället för fler
-          li Plugin
-          li.footnote *jämfört med OpenLayers
-      section
-        h1 Proj4Leaflet
-        p Stöd för projektioner i Leaflet av Kartena
-        <img src="images/projection.png" class="background"/>
-      section
         h2 Professionell GIS
         h4 (tung-GIS, desktop-GIS)
         hr
         ul.bullet 
           li ESRI 
           li Mapinfo
+          li QGIS
         <img src="images/tung-gis.png" class="background"/>
-      section 
-        h2 Konsument-GIS 
+      section
+        <img src="images/consumer.png" class="background"/>
+        h1 Konsument-GIS
         h4 (web-GIS, neo-GIS)
         hr
         p
           strong Vi tillhandahåller GIS i den moderna browsern
-        p Lika kraftfullt som desktop-GIS 
-        ul.bullet 
-          li 
+        p Lika kraftfullt som desktop-GIS
+        ul.bullet
+          li
             i
               small (typ)
       section
@@ -89,6 +67,52 @@ html
         ul.bullet
           li ESRI börjar öppna upp (delvis)
           li QGIS web
+
+      section
+        h1 Javascript
+        p Node.js / npm
+        p Fokuserat
+      section
+        h1 Komponenter
+        ul
+          li Utvecklare skriver många projekt som löser specifika problem
+          br
+          li npm gör det lätt att installera och kombinera dessa projekt
+          br
+          br
+          br
+          br
+          li <small><em>Detta är inget nytt, det är en gammal UNIX-idé</em></small>
+      section 
+        h1 Exempel
+      section
+        h1 <a href="http://leafletjs.com/"><img src="images/leaflet.png" width=440 alt="Leaflet"/></a>
+        ul
+          li Enkelhet*
+          li Färre funktioner istället för fler
+          li Plugin
+          li.footnote *jämfört med OpenLayers
+      section
+        <img src="images/projection.png" class="background"/>
+        h1 <a href="https://github.com/kartena/proj4leaflet/">Proj4Leaflet</a>
+        p Stöd för projektioner i Leaflet av Kartena
+      section
+        h1 Andra plugin vi skrivit
+        ul.bullet 
+          li <a href="https://github.com/kartena/leaflet-tilejson">Leaflet Tilejson</a> - lagerkonfiguration
+          li <a href="https://github.com/kartena/Leaflet.zoomslider">Leaflet Zoomslider</a> - zoomslider
+          li <a href="https://github.com/kartena/Leaflet.Pancontrol">Leaflet Pan control</a> - panoreringskontroll
+          li <a href="https://github.com/kartena/Leaflet.EditableHandlers">Leaflet Editable handlers</a> - ritverktyg
+      section
+        h1 Open Source All the Things!
+        p
+          small hur vi jobbar med open source
+        hr
+        ul.bullet
+          li Tänk open source från början
+          li Små komponenter
+          li Skippa storslagna visioner, börja smått (first make it work, then make it beautiful)
+          li Mycket är användbart även om det inte är perfekt
       section
         h1 Javascript
       section

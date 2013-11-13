@@ -4,7 +4,7 @@
 
 slide_width = 640px
 slide_height = 480px
-slide_background = #fff
+slide_background = transparent
 
 slide_transition_length = .6s
 slide_transition_easing = ease
@@ -68,7 +68,7 @@ article
   margin-top: (slide_height / 2) * -1
   left: 50%
   margin-left: (slide_width / 2) * -1
-  background: slide_background
+  //background: slide_background
   background-image: url('../images/kartena.png')
   background-repeat: no-repeat
   background-size: 100px
@@ -99,7 +99,7 @@ article
     opacity 1
 
 .bespoke-active
-  opacity: 1
+  //opacity: 1
 
 // bespoke-bullet styles
 
@@ -186,6 +186,7 @@ table.logos
   font-style: italic
 
 .background
+  z-index: -1
   position: absolute
   top: 0
   left: 0
