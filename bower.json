@@ -5,6 +5,7 @@
     "bespoke.js": "~0.3.0",
     "bespoke-scale": "~0.2.0",
     "bespoke-hash": "~0.1.0",
+    "bespoke-bullets": "~0.2.1",
     "prism": "gh-pages"
   }
 }

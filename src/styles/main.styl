@@ -101,6 +101,21 @@ article
 .bespoke-active
   opacity: 1
 
+// bespoke-bullet styles
+
+.bespoke-bullet
+  transition: all bullet_transition_length bullet_transition_easing
+
+.bespoke-bullet-inactive
+  opacity: 0
+  li&
+    transform: translateX(bullet_transition_translate_x)
+  @media print
+    opacity: 1
+
+.bespoke-bullet-active
+  opacity: 1
+
 // bespoke-scale styles
 
 .bespoke-scale-parent
@@ -160,3 +175,8 @@ p
 a
   color: #0089f3
   text-decoration: none
+
+table.logos
+  td
+    width: 33%
+

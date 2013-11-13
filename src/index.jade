@@ -19,28 +19,29 @@ html
 
       section
         h1 Trender
-      section 
+      section
         h1 Open Source vs Closed Source
-        ul 
-          li  Closed source: Drivkraft att skapa stora system
+        ul
+          li Closed source: Drivkraft att skapa stora system
           li Open source: Drivkraft att skapa lösningar på specifika problem
-      section 
+      section
         h1 Javascript
-        p NPM / Node.js 
-        p Fokuserat 
-      section 
-        h1 Kombination 
-        p Många utvecklare skriver väldigt många små projekt som löser små specifika problem
-        hr
-        p npm gör att det lätt att installera och kombinera dessa projekt
-        br
-        br
-        br
-        br
-        p <small><em>Detta är inget nytt, det är en gammal UNIX-idé</em></small>
-      section 
+        p NPM / Node.js
+        p Fokuserat
+      section
+        h1 Kombination
+        ul
+          <li data-bespoke-bullet>Många utvecklare skriver väldigt många små projekt som löser små specifika problem</li>
+          li
+          <li data-bespoke-bullet>npm gör att det lätt att installera och kombinera dessa projekt</li>
+          li
+          li
+          li
+          li
+          <li data-bespoke-bullet><small><em>Detta är inget nytt, det är en gammal UNIX-idé</em></small></li>
+      section
         h1 Leaflet
-        p Fokuserat på att vara enkelt* 
+        p Fokuserat på att vara enkelt*
         p Tar bort features istället för att lägga till
         p (flyttar till plugin istället)
         br
@@ -48,10 +49,10 @@ html
         br
         br
         p *<small><em>jämfört med OpenLayers</em></small>
-      section 
+      section
         h1 Proj4Leaflet
         p Stöd för projektioner i Leaflet av Kartena
-      section 
+      section
         h1 Vad var planen?
         p
           | Vi tänkte använda Geoserver och OpenLayers. 
@@ -73,26 +74,31 @@ html
           i
             small (typ)
       section 
+
+      section
         h2 Vad använder Kartena?
-        h4 QGIS
-        h4 Geoserver
-        h4 TileMill
-        h4 Tilestache
-        h4 Mapnik (och OGCServer)
-        h4 Node (JSTS, Proj4js, geojson.io, wellknown, reproject)
-      section 
+        table.logos
+          tr
+            td <img src="images/mapnik.png"/>
+            td <img src="images/tilestache.jpg" height="100"/>
+            td <img src="images/geoserver.png" height="60"/>
+          tr
+            td <img src="images/tilemill.png" height="120"/>
+            td <img src="images/nodejs.png"/>
+            td <img src="images/qgis.png" height="60"/>
+      section
         h1 Vad tror Kartena är trenden?
         h2 Javascript
         h2 Javascript
         h2 Javascript
         h2 Javascript
-      section 
+      section
         h1 Proffessionell GIS flyttar till konsument-GIS
-      section 
+      section
         h1 Javascript
-      section 
+      section
         h1 Javascript
-      section 
+      section
         h1 Javascript
 
 
@@ -129,5 +135,6 @@ html
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
     script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.js')
     script(src='bower_components/prism/prism.js')
     script(src='scripts/main.js')
