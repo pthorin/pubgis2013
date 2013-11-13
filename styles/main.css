@@ -89,7 +89,6 @@ article.bespoke-parent {
   margin-top: -240px;
   left: 50%;
   margin-left: -320px;
-  background: #fff;
   background-image: url("../images/kartena.png");
   background-repeat: no-repeat;
   -webkit-background-size: 100px;
@@ -147,7 +146,33 @@ article.bespoke-parent {
     filter: none;
   }
 }
-.bespoke-active {
+.bespoke-bullet {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.bespoke-bullet-inactive {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+li.bespoke-bullet-inactive {
+  -webkit-transform: translateX(16px);
+  -moz-transform: translateX(16px);
+  -o-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+@media print {
+  .bespoke-bullet-inactive {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+.bespoke-bullet-active {
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -215,4 +240,23 @@ p {
 a {
   color: #0089f3;
   text-decoration: none;
+}
+table.logos td {
+  width: 33%;
+}
+.footnote {
+  padding-top: 72px;
+  font-size: small;
+  font-style: italic;
+}
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }

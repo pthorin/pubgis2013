@@ -1,4 +1,5 @@
 bespoke.horizontal.from('article', {
   scale: true,
-  hash: true
+  hash: true,
+  bullets: 'li, .bullet'
 });
