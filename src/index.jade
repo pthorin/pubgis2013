@@ -144,8 +144,10 @@ html
       section
         code.language-bash
           pre.
-            npm install -g wellknown reproject geojsonio
-            echo "POINT(57.7 11.9)" | wellknown | reproject --reverse | geojsonio
+            > npm install -g wellknown reproject geojsonio-cli
+            > echo "POINT(6399451 319802)" | wellknown |
+              reproject --reverse --sr --from epsg:3006 --to epsg:4326 |
+              geojsonio
       section
         h1 Inspiration
         <a href='http://chelm.github.io/foss4g2013-geo-javascript/' target='_blank'>http://chelm.github.io/foss4g2013-geo-javascript/</a>
@@ -205,4 +207,5 @@ html
     script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
     script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.js')
     script(src='bower_components/prism/prism.js')
+    script(src='bower_components/prism/components/prism-bash.js')
     script(src='scripts/main.js')
