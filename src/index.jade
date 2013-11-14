@@ -9,6 +9,8 @@ html
     link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-tomorrow.css')
 
     link(rel='stylesheet', type='text/css', href='styles/main.css')
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+ 
 
   body
 
@@ -107,12 +109,14 @@ html
       section
         h1 Exempel
       section
-        h1 <a href="http://leafletjs.com/"><img src="images/leaflet.png" width=440 alt="Leaflet"/></a>
-        ul
-          li Enkelhet*
-          li Färre funktioner istället för fler
-          li Plugin
-          li.footnote *jämfört med OpenLayers
+        div#mapzor
+          h1 <a href="http://leafletjs.com/"><img src="images/leaflet.png" width=440 alt="Leaflet"/></a>
+          ul
+            li Enkelhet*
+            li Färre funktioner istället för fler
+            li Plugin
+            li.footnote *jämfört med OpenLayers
+        <div id="map" ></div>
       section
         <img src="images/projection.png" class="background"/>
         h1 <a href="https://github.com/kartena/proj4leaflet/">Proj4Leaflet</a>
@@ -216,4 +220,10 @@ html
     script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.js')
     script(src='bower_components/prism/prism.js')
     script(src='bower_components/prism/components/prism-bash.js')
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    script(src='scripts/proj4-compressed.js')
+    script(src='scripts/proj4leaflet.js')
+    script(src='scripts/leaflet-tilejson.js')
+    script(src='http://api.geosition.com/tile-meta/lm.jsonp?jsonp=lmvTileJson%3d')
     script(src='scripts/main.js')
+
