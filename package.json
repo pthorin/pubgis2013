@@ -2,7 +2,7 @@
   "name": "kartena-pubkvall-gis-vast-bespoke",
   "version": "0.0.0",
   "dependencies": {
-    "leaflet-tilejson": "~0.6.0"
+    "leaflet-tilejson": "~0.7.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
